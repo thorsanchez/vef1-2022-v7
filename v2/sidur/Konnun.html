@@ -6,25 +6,24 @@
   </head>
 
   <nav>
-    <ul>
-<li><h3> <a href="../Index.html">Heim</a>
+    
+<h3> <a href="../Index.html">Heim</a>
  <a href="baekur.html">Baekur</a>
  <a href="Um.html">Um</a>
  <a href="Konnun.html">Konnun</a>
 </h3>
-</li>
-  </nav>
+</nav>
 
 <h1>Reynsla af forritun</h1>
 
 
 
 <form>
-<label for="Code">Forritunarmál sem ég kann best:</label>
+<label for="Code"> Forritunarmál sem ég kann best:</label>
 
-<select name="Code" id="programming_language" required>
+<select name="Code" id="Code" required>
  
-
+    <option value="">None</option>
   <option value="Python">Python</option>
 <option value="C++">C++</option>
 <option value="Java">Java</option>
@@ -198,36 +197,26 @@
 <option value="Raku">Raku</option>
 </select>
 
-<p><label for="number">Hversu vel kanntu forritunarmálið á skalanum 0 til 10?</label>
-<select name="number" id="number">
+<p>Hversu vel kanntu forritunarmálið á skalanum 0 til 10?</p>
+<div class="slidecontainer">
+    <input type="range" min="0" max="10" value="0" class="slider" id="myRange">
+  </div>
 
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
 
-</select></p>
-
-<p> <div class="group">
+<div class="group">
     <label>Hvað finnst þér best við forritunarmálið?</label>
-    <input type="text" required="required" placeholder="Fylltu inn her"></p> 
+    <input type="text" required="required" placeholder="Fylltu inn her">
   </div>
 
-  <p> <div class="group">
+  <div class="group">
     <label>Hvað finnst þér verst við forritunarmálið?</label>
-    <input type="text" required="required" placeholder="Fylltu inn her"></p>
+    <input type="text" required="required" placeholder="Fylltu inn her">
   </div>
 
-  <form action="/action_page.php">
+ 
     <label for="myfile">Velja skrá:</label>
     <input type="file" id="myfile" name="myfile"><br><br>
+
 
 
 
@@ -235,9 +224,9 @@
 
 <label for="Code">Forritunarmál sem mig langar að læra</label>
 
-<select name="Code" id="programming_language" required="required">
+<select name="Code" id="programming_language" required>
  
-
+    <option value="">None</option>
 <option value="Python">Python</option>
 <option value="C++">C++</option>
 <option value="Java">Java</option>
@@ -414,14 +403,14 @@
 
 <p><label for="answer">Hvers vegna langar þig að læra þetta forritunarmál</label>
 
-<select name="answer" id="answer" required>
+<select name="answer" id="answer">
 <option selected disabled>-Veldu úr listanum-</option>
 <option value="Vegna vinnu">Vegna vinnu</option>
 <option value="Fyrir akademísk störf">Fyrir akademísk störf</option>
-<option value="Forvitni">Forvitni</option></p>
+<option value="Forvitni">Forvitni</option></select></p>
 
 
-</select>
+
 <p>Annað:</p>
 <p><textarea name="textarea"
 rows="5" cols="20">Skrifa hér</textarea></p>
@@ -434,18 +423,22 @@ rows="5" cols="20">Skrifa hér</textarea></p>
       <label for="coding">Það má hafa samband við mig</label>
     </div>
 
-    <p><label for="Spurning">Netfang:</label>
-        <input type="text" id="Question" Question="Question" placeholder="@"></p>
+    <div class="group">
+    <label for="password">Netfang:</label>
+        <input id="password" placeholder="@">
+    </div>
 
-        <p><label for="Spurning">Sími:</label>
-            <input type="text" id="Question" Question="Question" placeholder="000-0000"></p>
+        <label for="meta">Sími:</label>
+            <input id="meta" placeholder="000-0000">
 
 
-            <br><br>
+             <br><br>
             <input type="submit" value="Submit">
             </form>
 
+            
 
+            <a href="../Index.html">forsiða</a>
 
 </body>
 </html>
