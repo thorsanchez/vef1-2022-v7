@@ -147,10 +147,18 @@ fieldset {
   width: 1px;
 }
 
-.bilum p, h2, img{
+.bilum p, h2{
   line-height: 1rem;
   margin-bottom: 1rem;
+
 }
+
+.bilum img {
+  
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
 /* Uppsetning á síðu—layout */
 .content {
   /* Lætur börn .content raða sér með _flexbox_ */
