@@ -14,6 +14,7 @@ Reiknum stærð á öllum boxum sem border-box.
 html {
   box-sizing: border-box;
   font-size: 16px;
+
 }
 
 /* og látum erfast á allt */
@@ -89,8 +90,19 @@ nav ul li {
 
 .konnun1{
   flex-direction: column;
+  display: flex;
+  max-width: 25rem;
+}
 
-  
+.konnun2{
+  flex-direction: column;
+  display: flex;
+  max-width: 25rem;
+  margin-top: 30;
+}
+
+legend {
+  font-size: 24px;
 }
   .content h2{
 
@@ -100,8 +112,11 @@ footer {
   background-color: #00bfff;
   padding: 1rem;
   margin-top: 20.6rem;}
-footer p {
+footer a {
   max-width: 1200px;
+  color: #000000;
+  text-decoration: none;
+
 }
 
 table {
@@ -110,7 +125,7 @@ table {
 
 th, td {
   text-align: left;
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 tr:nth-child(even) {
@@ -132,6 +147,10 @@ fieldset {
   width: 1px;
 }
 
+.bilum p, h2, img{
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
 /* Uppsetning á síðu—layout */
 .content {
   /* Lætur börn .content raða sér með _flexbox_ */
@@ -141,6 +160,7 @@ fieldset {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+  font-family: 'Inter', sans-serif;
   
   
 }

@@ -27,46 +27,39 @@
     <main id="texti">
       <form action="./" method="get">
         <fieldset>
-          <legend>Reynsla af forritun</legend>
+        <legend>Reynsla af forritun</legend>
           <div class="konnun1">
             <label for="forritunarmal_kann">Forritunarmál sem ég kann best</label>
             <input list="forritunarmal" required id="forritunarmal_kann" name="forritunarmal_kann"/>
-          </div>
-          <div>
+        
+          
             <label for="forritunarmal_kunnatta"
-              >Hversu vel kanntu forritunarmálið á skalanum 0 til 10?</label
-            >
-            <input
+              >Hversu vel kanntu forritunarmálið á skalanum 0 til 10?</label>
+              <input
               type="range"
               min="0"
               max="10"
               value="0"
               id="forritunarmal_kunnatta"
-              name="forritunarmal_kunnatta"
-            />
-          </div>
+              name="forritunarmal_kunnatta"/>
 
-          <div>
+          
             <label for="forritunarmal_best">Hvað finnst þér best við forritunarmálið?</label>
             <input type="text" required id="forritunarmal_best" name="forritunarmal_best" />
-          </div>
-          <div>
+          
             <label for="forritunarmal_verst">Hvað finnst þér verst við forritunarmálið?</label>
             <input type="text" required id="forritunarmal_verst" name="forritunarmal_verst" />
-          </div>
-          <div>
+          
             <label for="forritunarmal_daemi">Dæmi um forrit:</label>
             <input type="file" id="forritunarmal_daemi" name="forritunarmal_daemi" />
-          
-        </fieldset>
       
+        </fieldset>
 
 
         <fieldset>
-          
-          <legend>
+
       
-            <label for="forritunarmal_laera">Forritunarmál sem mig langar að læra</label>
+          <legend><label for="forritunarmal_laera">Forritunarmál sem mig langar að læra</label>
           </legend>
           <!-- Til samanburðar við að ofan, notum <select> með möguleika á að velja mörg stök -->
           <select name="forritunarmal_laera" id="forritunarmal_laera" multiple required>
@@ -259,6 +252,9 @@
             <textarea id="annad" name="annad" cols="40" rows="10"></textarea>
           </div>
         </fieldset>
+      
+
+
         <fieldset>
           <legend>Hafa samband</legend>
           <label>
@@ -451,6 +447,7 @@
         <option>Raku</option>
       </datalist>
     </main>
+  </small>
     </div>
   </body>
     <footer>
