@@ -1,452 +1,461 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="is">
   <head>
-    <meta charset="utf-8">
-    <title>forsiða</title>
+    <meta charset="utf-8" />
+    <title>Könnun um forritun</title>
+    <link rel="stylesheet" href="../Style.css"/>
   </head>
-<body>
-  <nav>
+  <body>
+    <header>
+      <h1>Könnun Um Forritun</h1>
+    </header>
+
+    <div class="content">
+  
+     <p class="sr-only"><a href="#texti">Beint í efni</a></p>
     
-<h3> <a href="../Index.html">Heim</a>
- <a href="baekur.html">Baekur</a>
- <a href="Um.html">Um</a>
- <a href="Konnun.html">Konnun</a>
-</h3>
-</nav>
 
-<h1>Reynsla af forritun</h1>
+    <nav>
+      <ul>
+        <li><a class="nav-item" href="../Index.html">Heim</a></li>
+          <li><a class="nav-item" href="../sidur/baekur.html">Baekur</a></li>
+          <li><a class="nav-item" href="../sidur/Um.html">Um</a></li>
+          <li><a class="nav-item" href="../sidur/Konnun.html">Konnun</a></li>
+      </ul>
+    </nav>
 
+    <main id="texti">
+      <form action="./" method="get">
+        <fieldset>
+          <legend>Reynsla af forritun</legend>
+          <div>
+            <label for="forritunarmal_kann">Forritunarmál sem ég kann best</label>
+            <input
+              list="forritunarmal"
+              required
+              id="forritunarmal_kann"
+              name="forritunarmal_kann"
+            />
+          </div>
+          <div>
+            <label for="forritunarmal_kunnatta"
+              >Hversu vel kanntu forritunarmálið á skalanum 0 til 10?</label
+            >
+            <input
+              type="range"
+              min="0"
+              max="10"
+              value="0"
+              id="forritunarmal_kunnatta"
+              name="forritunarmal_kunnatta"
+            />
+          </div>
 
+          <div>
+            <label for="forritunarmal_best">Hvað finnst þér best við forritunarmálið?</label>
+            <input type="text" required id="forritunarmal_best" name="forritunarmal_best" />
+          </div>
+          <div>
+            <label for="forritunarmal_verst">Hvað finnst þér verst við forritunarmálið?</label>
+            <input type="text" required id="forritunarmal_verst" name="forritunarmal_verst" />
+          </div>
+          <div>
+            <label for="forritunarmal_daemi">Dæmi um forrit:</label>
+            <input type="file" id="forritunarmal_daemi" name="forritunarmal_daemi" />
+          </div>
+        </fieldset>
 
-<form>
-<label for="Code"> Forritunarmál sem ég kann best:</label>
+        <fieldset>
+          <legend>
+            <label for="forritunarmal_laera">Forritunarmál sem mig langar að læra</label>
+          </legend>
+          <!-- Til samanburðar við að ofan, notum <select> með möguleika á að velja mörg stök -->
+          <select name="forritunarmal_laera" id="forritunarmal_laera" multiple required>
+            <option>Python</option>
+            <option>C++</option>
+            <option>Java</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>PHP</option>
+            <option>R</option>
+            <option>JavaScript</option>
+            <option>Go</option>
+            <option>Assembly</option>
+            <option>Matlab</option>
+            <option>Scala</option>
+            <option>Ruby</option>
+            <option>HTML</option>
+            <option>Arduino</option>
+            <option>Shell</option>
+            <option>Perl</option>
+            <option>Swift</option>
+            <option>Objective-C</option>
+            <option>Lua</option>
+            <option>Fortran</option>
+            <option>SQL</option>
+            <option>Haskell</option>
+            <option>VHDL</option>
+            <option>Visual Basic</option>
+            <option>Cuda</option>
+            <option>Rust</option>
+            <option>Verilog</option>
+            <option>D</option>
+            <option>Pascal/Delphi</option>
+            <option>Julia</option>
+            <option>Lisp</option>
+            <option>Prolog</option>
+            <option>LabView</option>
+            <option>Erlang</option>
+            <option>SAS</option>
+            <option>Clojure</option>
+            <option>Cobol</option>
+            <option>ABAP</option>
+            <option>TCL</option>
+            <option>Ada</option>
+            <option>Scheme</option>
+            <option>J</option>
+            <option>Ocaml</option>
+            <option>Ladder Logic</option>
+            <option>Groovy</option>
+            <option>Dart</option>
+            <option>CoffeeScript</option>
+            <option>Forth</option>
+            <option>Kotlin</option>
+            <option>Elixir</option>
+            <option>F#</option>
+            <option>Eiffel</option>
+            <option>Elm</option>
+            <option>WebAssembly</option>
+            <option>TypeScript</option>
+            <option>Raku</option>
+            <option>Python</option>
+            <option>C++</option>
+            <option>Java</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>PHP</option>
+            <option>R</option>
+            <option>JavaScript</option>
+            <option>Go</option>
+            <option>Assembly</option>
+            <option>Matlab</option>
+            <option>Scala</option>
+            <option>Ruby</option>
+            <option>HTML</option>
+            <option>Arduino</option>
+            <option>Shell</option>
+            <option>Perl</option>
+            <option>Swift</option>
+            <option>Objective-C</option>
+            <option>Lua</option>
+            <option>Fortran</option>
+            <option>SQL</option>
+            <option>Haskell</option>
+            <option>VHDL</option>
+            <option>Visual Basic</option>
+            <option>Cuda</option>
+            <option>Rust</option>
+            <option>Verilog</option>
+            <option>D</option>
+            <option>Pascal/Delphi</option>
+            <option>Julia</option>
+            <option>Lisp</option>
+            <option>Prolog</option>
+            <option>LabView</option>
+            <option>Erlang</option>
+            <option>SAS</option>
+            <option>Clojure</option>
+            <option>Cobol</option>
+            <option>ABAP</option>
+            <option>TCL</option>
+            <option>Ada</option>
+            <option>Scheme</option>
+            <option>J</option>
+            <option>Ocaml</option>
+            <option>Ladder Logic</option>
+            <option>Groovy</option>
+            <option>Dart</option>
+            <option>CoffeeScript</option>
+            <option>Forth</option>
+            <option>Kotlin</option>
+            <option>Elixir</option>
+            <option>F#</option>
+            <option>Eiffel</option>
+            <option>Elm</option>
+            <option>WebAssembly</option>
+            <option>TypeScript</option>
+            <option>Raku</option>
+            <option>Python</option>
+            <option>C++</option>
+            <option>Java</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>PHP</option>
+            <option>R</option>
+            <option>JavaScript</option>
+            <option>Go</option>
+            <option>Assembly</option>
+            <option>Matlab</option>
+            <option>Scala</option>
+            <option>Ruby</option>
+            <option>HTML</option>
+            <option>Arduino</option>
+            <option>Shell</option>
+            <option>Perl</option>
+            <option>Swift</option>
+            <option>Objective-C</option>
+            <option>Lua</option>
+            <option>Fortran</option>
+            <option>SQL</option>
+            <option>Haskell</option>
+            <option>VHDL</option>
+            <option>Visual Basic</option>
+            <option>Cuda</option>
+            <option>Rust</option>
+            <option>Verilog</option>
+            <option>D</option>
+            <option>Pascal/Delphi</option>
+            <option>Julia</option>
+            <option>Lisp</option>
+            <option>Prolog</option>
+            <option>LabView</option>
+            <option>Erlang</option>
+            <option>SAS</option>
+            <option>Clojure</option>
+            <option>Cobol</option>
+            <option>ABAP</option>
+            <option>TCL</option>
+            <option>Ada</option>
+            <option>Scheme</option>
+            <option>J</option>
+            <option>Ocaml</option>
+            <option>Ladder Logic</option>
+            <option>Groovy</option>
+            <option>Dart</option>
+            <option>CoffeeScript</option>
+            <option>Forth</option>
+            <option>Kotlin</option>
+            <option>Elixir</option>
+            <option>F#</option>
+            <option>Eiffel</option>
+            <option>Elm</option>
+            <option>WebAssembly</option>
+            <option>TypeScript</option>
+            <option>Raku</option>
+          </select>
 
-<select name="Code" id="Code" required>
- 
-    <option value="">-veldu úr listanum-</option>
-  <option value="Python">Python</option>
-<option value="C++">C++</option>
-<option value="Java">Java</option>
-<option value="C">C</option>
-<option value="C#">C#</option>
-<option value="PHP">PHP</option>
-<option value="R">R</option>
-<option value="JavaScript">JavaScript</option>
-<option value="Go">Go</option>
-<option value="Assembly">Assembly</option>
-<option value="Matlab">Matlab</option>
-<option value="Scala">Scala</option>
-<option value="Ruby">Ruby</option>
-<option value="HTML">HTML</option>
-<option value="Arduino">Arduino</option>
-<option value="Shell">Shell</option>
-<option value="Perl">Perl</option>
-<option value="Swift">Swift</option>
-<option value="Objective-C">Objective-C</option>
-<option value="Lua">Lua</option>
-<option value="Fortran">Fortran</option>
-<option value="SQL">SQL</option>
-<option value="Haskell">Haskell</option>
-<option value="VHDL">VHDL</option>
-<option value="Visual Basic">Visual Basic</option>
-<option value="Cuda">Cuda</option>
-<option value="Rust">Rust</option>
-<option value="Verilog">Verilog</option>
-<option value="D">D</option>
-<option value="Pascal/Delphi">Pascal/Delphi</option>
-<option value="Julia">Julia</option>
-<option value="Lisp">Lisp</option>
-<option value="Prolog">Prolog</option>
-<option value="LabView">LabView</option>
-<option value="Erlang">Erlang</option>
-<option value="SAS">SAS</option>
-<option value="Clojure">Clojure</option>
-<option value="Cobol">Cobol</option>
-<option value="ABAP">ABAP</option>
-<option value="TCL">TCL</option>
-<option value="Ada">Ada</option>
-<option value="Scheme">Scheme</option>
-<option value="J">J</option>
-<option value="Ocaml">Ocaml</option>
-<option value="Ladder Logic">Ladder Logic</option>
-<option value="Groovy">Groovy</option>
-<option value="Dart">Dart</option>
-<option value="CoffeeScript">CoffeeScript</option>
-<option value="Forth">Forth</option>
-<option value="Kotlin">Kotlin</option>
-<option value="Elixir">Elixir</option>
-<option value="F#">F#</option>
-<option value="Eiffel">Eiffel</option>
-<option value="Elm">Elm</option>
-<option value="WebAssembly">WebAssembly</option>
-<option value="TypeScript">TypeScript</option>
-<option value="Raku">Raku</option>
-<option value="Python">Python</option>
-<option value="C++">C++</option>
-<option value="Java">Java</option>
-<option value="C">C</option>
-<option value="C#">C#</option>
-<option value="PHP">PHP</option>
-<option value="R">R</option>
-<option value="JavaScript">JavaScript</option>
-<option value="Go">Go</option>
-<option value="Assembly">Assembly</option>
-<option value="Matlab">Matlab</option>
-<option value="Scala">Scala</option>
-<option value="Ruby">Ruby</option>
-<option value="HTML">HTML</option>
-<option value="Arduino">Arduino</option>
-<option value="Shell">Shell</option>
-<option value="Perl">Perl</option>
-<option value="Swift">Swift</option>
-<option value="Objective-C">Objective-C</option>
-<option value="Lua">Lua</option>
-<option value="Fortran">Fortran</option>
-<option value="SQL">SQL</option>
-<option value="Haskell">Haskell</option>
-<option value="VHDL">VHDL</option>
-<option value="Visual Basic">Visual Basic</option>
-<option value="Cuda">Cuda</option>
-<option value="Rust">Rust</option>
-<option value="Verilog">Verilog</option>
-<option value="D">D</option>
-<option value="Pascal/Delphi">Pascal/Delphi</option>
-<option value="Julia">Julia</option>
-<option value="Lisp">Lisp</option>
-<option value="Prolog">Prolog</option>
-<option value="LabView">LabView</option>
-<option value="Erlang">Erlang</option>
-<option value="SAS">SAS</option>
-<option value="Clojure">Clojure</option>
-<option value="Cobol">Cobol</option>
-<option value="ABAP">ABAP</option>
-<option value="TCL">TCL</option>
-<option value="Ada">Ada</option>
-<option value="Scheme">Scheme</option>
-<option value="J">J</option>
-<option value="Ocaml">Ocaml</option>
-<option value="Ladder Logic">Ladder Logic</option>
-<option value="Groovy">Groovy</option>
-<option value="Dart">Dart</option>
-<option value="CoffeeScript">CoffeeScript</option>
-<option value="Forth">Forth</option>
-<option value="Kotlin">Kotlin</option>
-<option value="Elixir">Elixir</option>
-<option value="F#">F#</option>
-<option value="Eiffel">Eiffel</option>
-<option value="Elm">Elm</option>
-<option value="WebAssembly">WebAssembly</option>
-<option value="TypeScript">TypeScript</option>
-<option value="Raku">Raku</option>
-<option value="Python">Python</option>
-<option value="C++">C++</option>
-<option value="Java">Java</option>
-<option value="C">C</option>
-<option value="C#">C#</option>
-<option value="PHP">PHP</option>
-<option value="R">R</option>
-<option value="JavaScript">JavaScript</option>
-<option value="Go">Go</option>
-<option value="Assembly">Assembly</option>
-<option value="Matlab">Matlab</option>
-<option value="Scala">Scala</option>
-<option value="Ruby">Ruby</option>
-<option value="HTML">HTML</option>
-<option value="Arduino">Arduino</option>
-<option value="Shell">Shell</option>
-<option value="Perl">Perl</option>
-<option value="Swift">Swift</option>
-<option value="Objective-C">Objective-C</option>
-<option value="Lua">Lua</option>
-<option value="Fortran">Fortran</option>
-<option value="SQL">SQL</option>
-<option value="Haskell">Haskell</option>
-<option value="VHDL">VHDL</option>
-<option value="Visual Basic">Visual Basic</option>
-<option value="Cuda">Cuda</option>
-<option value="Rust">Rust</option>
-<option value="Verilog">Verilog</option>
-<option value="D">D</option>
-<option value="Pascal/Delphi">Pascal/Delphi</option>
-<option value="Julia">Julia</option>
-<option value="Lisp">Lisp</option>
-<option value="Prolog">Prolog</option>
-<option value="LabView">LabView</option>
-<option value="Erlang">Erlang</option>
-<option value="SAS">SAS</option>
-<option value="Clojure">Clojure</option>
-<option value="Cobol">Cobol</option>
-<option value="ABAP">ABAP</option>
-<option value="TCL">TCL</option>
-<option value="Ada">Ada</option>
-<option value="Scheme">Scheme</option>
-<option value="J">J</option>
-<option value="Ocaml">Ocaml</option>
-<option value="Ladder Logic">Ladder Logic</option>
-<option value="Groovy">Groovy</option>
-<option value="Dart">Dart</option>
-<option value="CoffeeScript">CoffeeScript</option>
-<option value="Forth">Forth</option>
-<option value="Kotlin">Kotlin</option>
-<option value="Elixir">Elixir</option>
-<option value="F#">F#</option>
-<option value="Eiffel">Eiffel</option>
-<option value="Elm">Elm</option>
-<option value="WebAssembly">WebAssembly</option>
-<option value="TypeScript">TypeScript</option>
-<option value="Raku">Raku</option>
-</select>
+          <div>
+            <label for="hvers_vegna">Hvers vegna langar þig að læra þetta forritunarmál</label>
+            <select id="hvers_vegna" name="hvers_vegna">
+              <option>-Veldu úr listanum- (sjálfgefið)</option>
+              <option>Vegna vinnu</option>
+              <option>Fyrir akademísk störf</option>
+              <option>Forvitni</option>
+            </select>
+          </div>
 
-<p>Hversu vel kanntu forritunarmálið á skalanum 0 til 10?</p>
-<div class="slidecontainer">
-    <input type="range" min="0" max="10" value="0" class="slider" id="myRange">
-  </div>
+          <div>
+            <label for="annad">Annað:</label>
+            <!-- Setjum cols or rows þó það _eiginlega_ stýri útliti, gefur meira pláss -->
+            <textarea id="annad" name="annad" cols="40" rows="10"></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Hafa samband</legend>
+          <label>
+            <input type="checkbox" name="samband" />
+            Það má hafa samband við mig
+          </label>
+          <div>
+            <label for="netfang">Netfang:</label>
+            <input type="email" name="netfang" id="netfang" />
+          </div>
+          <div>
+            <label for="simi">Sími:</label>
+            <input type="tel" name="simi" id="simi" placeholder="000-0000" />
+          </div>
+        </fieldset>
+        <button>Svara könnun</button>
+      </form>
 
-
-<div class="group">
-    <label>Hvað finnst þér best við forritunarmálið?</label>
-    <input type="text" required="required" placeholder="Fylltu inn her">
-  </div>
-
-  <div class="group">
-    <label>Hvað finnst þér verst við forritunarmálið?</label>
-    <input type="text" required="required" placeholder="Fylltu inn her">
-  </div>
-
- 
-    <p><label for="myfile">Dæmi um forrit:</label></p>
-    <input type="file" id="myfile" name="myfile"><br><br>
-
-
-
-
-<h1>Forritunarmál sem mig langar að læra</h1>
-
-<label for="Code">Forritunarmál sem mig langar að læra</label>
-
-<select name="Code" id="programming_language" required>
- 
-    <option value="">-Veldu úr listanum-</option>
-<option value="Python">Python</option>
-<option value="C++">C++</option>
-<option value="Java">Java</option>
-<option value="C">C</option>
-<option value="C#">C#</option>
-<option value="PHP">PHP</option>
-<option value="R">R</option>
-<option value="JavaScript">JavaScript</option>
-<option value="Go">Go</option>
-<option value="Assembly">Assembly</option>
-<option value="Matlab">Matlab</option>
-<option value="Scala">Scala</option>
-<option value="Ruby">Ruby</option>
-<option value="HTML">HTML</option>
-<option value="Arduino">Arduino</option>
-<option value="Shell">Shell</option>
-<option value="Perl">Perl</option>
-<option value="Swift">Swift</option>
-<option value="Objective-C">Objective-C</option>
-<option value="Lua">Lua</option>
-<option value="Fortran">Fortran</option>
-<option value="SQL">SQL</option>
-<option value="Haskell">Haskell</option>
-<option value="VHDL">VHDL</option>
-<option value="Visual Basic">Visual Basic</option>
-<option value="Cuda">Cuda</option>
-<option value="Rust">Rust</option>
-<option value="Verilog">Verilog</option>
-<option value="D">D</option>
-<option value="Pascal/Delphi">Pascal/Delphi</option>
-<option value="Julia">Julia</option>
-<option value="Lisp">Lisp</option>
-<option value="Prolog">Prolog</option>
-<option value="LabView">LabView</option>
-<option value="Erlang">Erlang</option>
-<option value="SAS">SAS</option>
-<option value="Clojure">Clojure</option>
-<option value="Cobol">Cobol</option>
-<option value="ABAP">ABAP</option>
-<option value="TCL">TCL</option>
-<option value="Ada">Ada</option>
-<option value="Scheme">Scheme</option>
-<option value="J">J</option>
-<option value="Ocaml">Ocaml</option>
-<option value="Ladder Logic">Ladder Logic</option>
-<option value="Groovy">Groovy</option>
-<option value="Dart">Dart</option>
-<option value="CoffeeScript">CoffeeScript</option>
-<option value="Forth">Forth</option>
-<option value="Kotlin">Kotlin</option>
-<option value="Elixir">Elixir</option>
-<option value="F#">F#</option>
-<option value="Eiffel">Eiffel</option>
-<option value="Elm">Elm</option>
-<option value="WebAssembly">WebAssembly</option>
-<option value="TypeScript">TypeScript</option>
-<option value="Raku">Raku</option>
-<option value="Python">Python</option>
-<option value="C++">C++</option>
-<option value="Java">Java</option>
-<option value="C">C</option>
-<option value="C#">C#</option>
-<option value="PHP">PHP</option>
-<option value="R">R</option>
-<option value="JavaScript">JavaScript</option>
-<option value="Go">Go</option>
-<option value="Assembly">Assembly</option>
-<option value="Matlab">Matlab</option>
-<option value="Scala">Scala</option>
-<option value="Ruby">Ruby</option>
-<option value="HTML">HTML</option>
-<option value="Arduino">Arduino</option>
-<option value="Shell">Shell</option>
-<option value="Perl">Perl</option>
-<option value="Swift">Swift</option>
-<option value="Objective-C">Objective-C</option>
-<option value="Lua">Lua</option>
-<option value="Fortran">Fortran</option>
-<option value="SQL">SQL</option>
-<option value="Haskell">Haskell</option>
-<option value="VHDL">VHDL</option>
-<option value="Visual Basic">Visual Basic</option>
-<option value="Cuda">Cuda</option>
-<option value="Rust">Rust</option>
-<option value="Verilog">Verilog</option>
-<option value="D">D</option>
-<option value="Pascal/Delphi">Pascal/Delphi</option>
-<option value="Julia">Julia</option>
-<option value="Lisp">Lisp</option>
-<option value="Prolog">Prolog</option>
-<option value="LabView">LabView</option>
-<option value="Erlang">Erlang</option>
-<option value="SAS">SAS</option>
-<option value="Clojure">Clojure</option>
-<option value="Cobol">Cobol</option>
-<option value="ABAP">ABAP</option>
-<option value="TCL">TCL</option>
-<option value="Ada">Ada</option>
-<option value="Scheme">Scheme</option>
-<option value="J">J</option>
-<option value="Ocaml">Ocaml</option>
-<option value="Ladder Logic">Ladder Logic</option>
-<option value="Groovy">Groovy</option>
-<option value="Dart">Dart</option>
-<option value="CoffeeScript">CoffeeScript</option>
-<option value="Forth">Forth</option>
-<option value="Kotlin">Kotlin</option>
-<option value="Elixir">Elixir</option>
-<option value="F#">F#</option>
-<option value="Eiffel">Eiffel</option>
-<option value="Elm">Elm</option>
-<option value="WebAssembly">WebAssembly</option>
-<option value="TypeScript">TypeScript</option>
-<option value="Raku">Raku</option>
-<option value="Python">Python</option>
-<option value="C++">C++</option>
-<option value="Java">Java</option>
-<option value="C">C</option>
-<option value="C#">C#</option>
-<option value="PHP">PHP</option>
-<option value="R">R</option>
-<option value="JavaScript">JavaScript</option>
-<option value="Go">Go</option>
-<option value="Assembly">Assembly</option>
-<option value="Matlab">Matlab</option>
-<option value="Scala">Scala</option>
-<option value="Ruby">Ruby</option>
-<option value="HTML">HTML</option>
-<option value="Arduino">Arduino</option>
-<option value="Shell">Shell</option>
-<option value="Perl">Perl</option>
-<option value="Swift">Swift</option>
-<option value="Objective-C">Objective-C</option>
-<option value="Lua">Lua</option>
-<option value="Fortran">Fortran</option>
-<option value="SQL">SQL</option>
-<option value="Haskell">Haskell</option>
-<option value="VHDL">VHDL</option>
-<option value="Visual Basic">Visual Basic</option>
-<option value="Cuda">Cuda</option>
-<option value="Rust">Rust</option>
-<option value="Verilog">Verilog</option>
-<option value="D">D</option>
-<option value="Pascal/Delphi">Pascal/Delphi</option>
-<option value="Julia">Julia</option>
-<option value="Lisp">Lisp</option>
-<option value="Prolog">Prolog</option>
-<option value="LabView">LabView</option>
-<option value="Erlang">Erlang</option>
-<option value="SAS">SAS</option>
-<option value="Clojure">Clojure</option>
-<option value="Cobol">Cobol</option>
-<option value="ABAP">ABAP</option>
-<option value="TCL">TCL</option>
-<option value="Ada">Ada</option>
-<option value="Scheme">Scheme</option>
-<option value="J">J</option>
-<option value="Ocaml">Ocaml</option>
-<option value="Ladder Logic">Ladder Logic</option>
-<option value="Groovy">Groovy</option>
-<option value="Dart">Dart</option>
-<option value="CoffeeScript">CoffeeScript</option>
-<option value="Forth">Forth</option>
-<option value="Kotlin">Kotlin</option>
-<option value="Elixir">Elixir</option>
-<option value="F#">F#</option>
-<option value="Eiffel">Eiffel</option>
-<option value="Elm">Elm</option>
-<option value="WebAssembly">WebAssembly</option>
-<option value="TypeScript">TypeScript</option>
-<option value="Raku">Raku</option>
-</select>
-
-
-<p><label for="answer">Hvers vegna langar þig að læra þetta forritunarmál</label>
-
-<select name="answer" id="answer">
-<option selected disabled>-Veldu úr listanum-</option>
-<option value="Vegna vinnu">Vegna vinnu</option>
-<option value="Fyrir akademísk störf">Fyrir akademísk störf</option>
-<option value="Forvitni">Forvitni</option></select></p>
-
-
-
-<p><label for="story">Annað:</label></p>
-
-<textarea id="story" name="story"
-rows="5" cols="33">
-</textarea>
-
-<h1>Hafa samband</h1>
-
-
-    <div>
-      <input type="checkbox" id="coding" name="interest" value="coding">
-      <label for="coding">Það má hafa samband við mig</label>
+      <datalist id="forritunarmal">
+        <option>Python</option>
+        <option>C++</option>
+        <option>Java</option>
+        <option>C</option>
+        <option>C#</option>
+        <option>PHP</option>
+        <option>R</option>
+        <option>JavaScript</option>
+        <option>Go</option>
+        <option>Assembly</option>
+        <option>Matlab</option>
+        <option>Scala</option>
+        <option>Ruby</option>
+        <option>HTML</option>
+        <option>Arduino</option>
+        <option>Shell</option>
+        <option>Perl</option>
+        <option>Swift</option>
+        <option>Objective-C</option>
+        <option>Lua</option>
+        <option>Fortran</option>
+        <option>SQL</option>
+        <option>Haskell</option>
+        <option>VHDL</option>
+        <option>Visual Basic</option>
+        <option>Cuda</option>
+        <option>Rust</option>
+        <option>Verilog</option>
+        <option>D</option>
+        <option>Pascal/Delphi</option>
+        <option>Julia</option>
+        <option>Lisp</option>
+        <option>Prolog</option>
+        <option>LabView</option>
+        <option>Erlang</option>
+        <option>SAS</option>
+        <option>Clojure</option>
+        <option>Cobol</option>
+        <option>ABAP</option>
+        <option>TCL</option>
+        <option>Ada</option>
+        <option>Scheme</option>
+        <option>J</option>
+        <option>Ocaml</option>
+        <option>Ladder Logic</option>
+        <option>Groovy</option>
+        <option>Dart</option>
+        <option>CoffeeScript</option>
+        <option>Forth</option>
+        <option>Kotlin</option>
+        <option>Elixir</option>
+        <option>F#</option>
+        <option>Eiffel</option>
+        <option>Elm</option>
+        <option>WebAssembly</option>
+        <option>TypeScript</option>
+        <option>Raku</option>
+        <option>Python</option>
+        <option>C++</option>
+        <option>Java</option>
+        <option>C</option>
+        <option>C#</option>
+        <option>PHP</option>
+        <option>R</option>
+        <option>JavaScript</option>
+        <option>Go</option>
+        <option>Assembly</option>
+        <option>Matlab</option>
+        <option>Scala</option>
+        <option>Ruby</option>
+        <option>HTML</option>
+        <option>Arduino</option>
+        <option>Shell</option>
+        <option>Perl</option>
+        <option>Swift</option>
+        <option>Objective-C</option>
+        <option>Lua</option>
+        <option>Fortran</option>
+        <option>SQL</option>
+        <option>Haskell</option>
+        <option>VHDL</option>
+        <option>Visual Basic</option>
+        <option>Cuda</option>
+        <option>Rust</option>
+        <option>Verilog</option>
+        <option>D</option>
+        <option>Pascal/Delphi</option>
+        <option>Julia</option>
+        <option>Lisp</option>
+        <option>Prolog</option>
+        <option>LabView</option>
+        <option>Erlang</option>
+        <option>SAS</option>
+        <option>Clojure</option>
+        <option>Cobol</option>
+        <option>ABAP</option>
+        <option>TCL</option>
+        <option>Ada</option>
+        <option>Scheme</option>
+        <option>J</option>
+        <option>Ocaml</option>
+        <option>Ladder Logic</option>
+        <option>Groovy</option>
+        <option>Dart</option>
+        <option>CoffeeScript</option>
+        <option>Forth</option>
+        <option>Kotlin</option>
+        <option>Elixir</option>
+        <option>F#</option>
+        <option>Eiffel</option>
+        <option>Elm</option>
+        <option>WebAssembly</option>
+        <option>TypeScript</option>
+        <option>Raku</option>
+        <option>Python</option>
+        <option>C++</option>
+        <option>Java</option>
+        <option>C</option>
+        <option>C#</option>
+        <option>PHP</option>
+        <option>R</option>
+        <option>JavaScript</option>
+        <option>Go</option>
+        <option>Assembly</option>
+        <option>Matlab</option>
+        <option>Scala</option>
+        <option>Ruby</option>
+        <option>HTML</option>
+        <option>Arduino</option>
+        <option>Shell</option>
+        <option>Perl</option>
+        <option>Swift</option>
+        <option>Objective-C</option>
+        <option>Lua</option>
+        <option>Fortran</option>
+        <option>SQL</option>
+        <option>Haskell</option>
+        <option>VHDL</option>
+        <option>Visual Basic</option>
+        <option>Cuda</option>
+        <option>Rust</option>
+        <option>Verilog</option>
+        <option>D</option>
+        <option>Pascal/Delphi</option>
+        <option>Julia</option>
+        <option>Lisp</option>
+        <option>Prolog</option>
+        <option>LabView</option>
+        <option>Erlang</option>
+        <option>SAS</option>
+        <option>Clojure</option>
+        <option>Cobol</option>
+        <option>ABAP</option>
+        <option>TCL</option>
+        <option>Ada</option>
+        <option>Scheme</option>
+        <option>J</option>
+        <option>Ocaml</option>
+        <option>Ladder Logic</option>
+        <option>Groovy</option>
+        <option>Dart</option>
+        <option>CoffeeScript</option>
+        <option>Forth</option>
+        <option>Kotlin</option>
+        <option>Elixir</option>
+        <option>F#</option>
+        <option>Eiffel</option>
+        <option>Elm</option>
+        <option>WebAssembly</option>
+        <option>TypeScript</option>
+        <option>Raku</option>
+      </datalist>
+    </main>
     </div>
-
-    <div class="group">
-    <label for="password">Netfang:</label>
-        <input id="password" placeholder="@">
-    </div>
-
-        <label for="meta">Sími:</label>
-            <input id="meta" placeholder="000-0000">
-
-
-             <br><br>
-            <input type="submit" value="Submit">
-            </form>
-
-            
-
-            <a href="../Index.html">forsiða</a>
-
-</body>
+  </body>
+    <footer>
+      <p><a href="../index.html">Til baka á forsíðu</a></p>
+    </footer>
+  </body>
 </html>
-
-
-
-
-
-
