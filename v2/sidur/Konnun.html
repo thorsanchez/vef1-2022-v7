@@ -28,14 +28,9 @@
       <form action="./" method="get">
         <fieldset>
           <legend>Reynsla af forritun</legend>
-          <div>
+          <div class="konnun1">
             <label for="forritunarmal_kann">Forritunarmál sem ég kann best</label>
-            <input
-              list="forritunarmal"
-              required
-              id="forritunarmal_kann"
-              name="forritunarmal_kann"
-            />
+            <input list="forritunarmal" required id="forritunarmal_kann" name="forritunarmal_kann"/>
           </div>
           <div>
             <label for="forritunarmal_kunnatta"
@@ -62,11 +57,15 @@
           <div>
             <label for="forritunarmal_daemi">Dæmi um forrit:</label>
             <input type="file" id="forritunarmal_daemi" name="forritunarmal_daemi" />
-          </div>
+          
         </fieldset>
+      
+
 
         <fieldset>
+          
           <legend>
+      
             <label for="forritunarmal_laera">Forritunarmál sem mig langar að læra</label>
           </legend>
           <!-- Til samanburðar við að ofan, notum <select> með möguleika á að velja mörg stök -->
