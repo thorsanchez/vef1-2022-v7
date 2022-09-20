@@ -84,6 +84,7 @@ nav ul li {
   list-style: none;
   display: inline-block;
   text-align: center;
+  padding-inline-end: 5rem;
 }
 
 .konnun1{
