@@ -98,7 +98,7 @@ nav ul li {
   flex-direction: column;
   display: flex;
   max-width: 25rem;
-  margin-top: 30;
+  margin-top: 2rem;
 }
 
 legend {
