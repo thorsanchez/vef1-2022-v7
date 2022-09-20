@@ -134,6 +134,7 @@ tr:nth-child(even) {
 
 fieldset {
   border: 0.09rem solid #00bfff;
+  margin-bottom: 1rem;
 }
 
 /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
@@ -151,6 +152,18 @@ fieldset {
   line-height: 1rem;
   margin-bottom: 1rem;
 
+}
+
+button {
+  background: #0000;
+  border-color: #00bfff;
+  border-radius: 3rem;
+}
+
+label, input, select {
+  
+  margin-bottom: 1rem;
+  margin-top: 0.25rem;
 }
 
 .bilum img {
