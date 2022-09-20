@@ -147,7 +147,7 @@ fieldset {
   width: 1px;
 }
 
-.bilum p, h2{
+.bilum p, h2, ol{
   line-height: 1rem;
   margin-bottom: 1rem;
 
