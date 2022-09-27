@@ -109,15 +109,18 @@
     min-height: 100vh;
 
     color: #ffffff;
-    
+
     background-image: url(./Myndir/header.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-color: blue;
+    background-color: #fff;
     background-position: 50% 50%;
     
     margin-bottom: 5rem;
   }
+
+
+  
 
   header .content {
     margin: auto;
@@ -263,7 +266,7 @@
 footer{
   display: flex;
   justify-content: center;
-  background-color: var(--color-border);
+  background-color: var(--color-primary);
   padding: 0.5rem;
 }
   
