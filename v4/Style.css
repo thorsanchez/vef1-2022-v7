@@ -1,0 +1,278 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+  
+    /* Lætur skroll innan síðu taka tíma */
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  
+  
+  /* og látum erfast á allt */
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Breytur sem skal nota */
+  
+  :root {
+    /* Grunn bilið okkar er 1rem == 16px */
+    --spacing: 1rem;
+    /* Hámarksbreidd á efni */
+    --max-width: 1200px;
+    --color-primary: #f0f0f8;
+  
+    --color-header: #fff;
+    --color-text: #000;
+    --color-border: #ccc;
+  
+    /* Letur stillingar */
+    --font-base-body-px: 16px;
+    --font-base-size: 1rem;
+    --font-family-base: 'Nunito', Helvetica, Arial, sans-serif;
+    --font-family-heading: 'Domine', Georgia, serif;
+    
+  }
+  
+  /* Leturgerðir */
+  
+  /* TODO Setja upp leturgerðir */
+  
+  /* Almennt */
+  
+  body {
+    color: var(--color-text);
+    font-size: var(--font-base-body-px);
+    line-height: 1.5;
+    font-family: var(--font-family-base);
+  }
+
+  header .protection {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .button1 {
+    color: var(--color-text);
+    background-color: white;
+    border: 0.1rem solid white;
+    border-radius:0.4rem;
+    padding: 0.5rem;
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-family-heading);
+  }
+
+  
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+
+  
+  
+  /* Layout */
+  
+  main {
+    margin: 0 auto;
+    max-width: var(--max-width);
+    
+  }
+  
+  .info-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 4);
+  }
+  
+  /* Header */
+  
+  header {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    color: #ffffff;
+    
+    background-image: url(./Myndir/header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: skyblue;
+    background-position: 50% 50%;
+    
+    margin-bottom: 5rem;
+  }
+
+  header .content {
+    margin: auto;
+    text-align: center;
+    width:100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+
+    gap: calc(var(--spacing)*2);
+    font-family: var(--font-family-heading);
+    font-size: calc(var(--font-base-size)*1.5);
+    text-align: center;
+
+  }
+
+.info{
+  display: flex;
+  gap: calc(var(--spacing)*2);
+  }
+
+.info p{
+  margin-bottom: 3rem;
+}
+
+.loremteksti{
+  width: 45%;
+  height: 100px;
+  padding-left: 10rem;
+  padding-top: 5rem;
+}
+
+    
+.mynd {
+    height: 450px;
+    width: 55%;
+    transform: rotate(3deg);
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+  }
+
+
+.button2 {
+    color: var(--color-text);
+    background-color: var(--color-border);
+    border: 0.1rem solid var(--color-border);
+    border-radius:0.4rem;
+    padding: 0.5rem;
+  }
+
+.button3{
+  margin-bottom: 0.9rem;
+  margin-left: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+
+.mynd2 {
+    height: 350px;
+    width: 100%;
+    transform: rotate(-3deg);
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+  }
+
+.astaeda{
+    width: 100%;
+    height: 100px;
+    padding-top: 5rem;
+    padding-left: 7rem;
+  }
+
+.examples h2{
+  padding-left: 3.3rem;
+}
+
+  .examples .cards {
+    display: flex;
+    justify-content: center;
+    }
+
+  .examples .cards .card{
+    display: flex;
+    flex-direction: column;
+    width: var(--max-width);
+    border: 0.09rem solid var(--color-border);
+    border-radius: 5px 5px 0 0;
+    max-width: 45%;
+
+    }
+
+  .examples .cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+  }
+  .examples .cards .card img {
+    order: -1;
+    height: 250px;
+    object-fit: cover;
+
+  }
+
+  .examples .cards .card p {
+    flex: 1;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .examples .cards .card h3 {
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.3rem;
+  }
+
+  .examples .cards section {
+    background-color: var(--color-header);
+    width: calc(100%/4);
+    margin: 10px;
+    width: var(--max-width);
+  }
+
+  
+  
+  .examples .cards .card .button{
+    color: var(--color-text);
+    background-color: var(--color-header);
+    border: 0.6rem solid var(--color-primary);
+    border-radius:0.4rem;
+    background-color: var(--color-primary);
+    padding: 0.005rem;
+  }
+
+  
+
+
+  .examples .cards .card .button-secondary {
+    background-color: white;
+    border: 0.1rem solid white;
+  }
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-border);
+  padding: 0.5rem;
+}
+  
+  /* TODO */
+  
+  /* Upplýsingasvæði */
+  
+  /* TODO */
+  
+  /* Cards */
+  
+  /* TODO */
