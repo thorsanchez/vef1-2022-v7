@@ -1,0 +1,21 @@
+/*button*/
+.button {
+    display: inline-block;
+  
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    padding: calc(var(--spacing) / 2) calc(var(--spacing));
+  
+    font-family: var(--font-family-base);
+    text-decoration: none;
+  
+    color: var(--color-text);
+    background-color: var(--color-primary);
+  }
+  
+  .button-secondary {
+    border: none;
+    color: inherit;
+    background-color: transparent;
+  }
+
