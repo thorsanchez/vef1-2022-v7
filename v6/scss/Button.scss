@@ -1,21 +1,21 @@
 /*button*/
 .button {
-    display: inline-block;
+  background-color: var(--color-primary);
   
-    border: 1px solid var(--color-border);
-    border-radius: 5px;
-    padding: calc(var(--spacing) / 2) calc(var(--spacing));
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
   
-    font-family: var(--font-family-base);
-    text-decoration: none;
+  color: var(--color-text);
+  display: inline-block;
   
-    color: var(--color-text);
-    background-color: var(--color-primary);
-  }
+  font-family: var(--font-family-base);
+  padding: calc(var(--spacing) / 2) calc(var(--spacing));
+  text-decoration: none;
+}
   
-  .button-secondary {
-    border: none;
-    color: inherit;
-    background-color: transparent;
-  }
+.button-secondary {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+}
 

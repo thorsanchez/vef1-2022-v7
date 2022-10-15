@@ -33,7 +33,7 @@ html {
 
 .button-secondary {
   background-color: transparent;
-  border: none;
+  border: 0;
   color: inherit;
 }
 
@@ -50,57 +50,14 @@ html {
   /* Letur stillingar */
   --font-base-body-px: 16px;
   --font-base-size: 1rem;
-  --font-family-base: 'Nunito', Helvetica, Arial, sans-serif;
-  --font-family-heading: 'Domine', Georgia, serif;
+  --font-family-base: "Nunito", Helvetica, Arial, sans-serif;
+  --font-family-heading: "Domine", Georgia, serif;
   /* Grid stillingar */
   --columns: 12;
   --gutter: 30px;
   --offset: 20px;
   /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
   --vertical-space: calc(var(--gutter));
-}
-
-header {
-  background-attachment: fixed;
-  background-color: skyblue;
-  background-image: url(./myndir/header.jpg);
-  background-position: 50% 50%;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  position: relative;
-}
-
-header .content {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-family-heading);
-  font-size: calc(var(--font-base-size) * 1.5);
-  gap: calc(var(--spacing) * 2);
-  margin: auto;
-  position: relative;
-  text-align: center;
-  width: calc(100% - 2 * var(--offset));
-  z-index: 2;
-}
-
-header h1 {
-  font-size: 4rem;
-}
-
-header span {
-  font-size: 2rem;
-}
-
-header .protection {
-  background-color: rgba(0, 0, 0, 0.2);
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
 }
 
 /* Layout */
@@ -139,36 +96,30 @@ main {
 }
 
 @media (min-width: 600px) {
-  ::root {
+  :root {
     --vertical-space: calc(var(--gutter) * 2);
   }
-
   .info-boxes {
     display: grid;
     gap: var(--gutter);
     grid-template-rows: auto;
     width: 100%;
   }
-
   .info {
     display: grid;
     gap: var(--gutter);
     grid-template-columns: repeat(var(--columns), 1fr);
     grid-template-rows: auto;
   }
-
   .info .content {
     grid-column: 1/span 6;
   }
-
   .info .image {
     grid-column: 7/span 6;
   }
-
   .info-right .content {
     grid-column: 7/span 6;
   }
-
   .info-right .image {
     grid-column: 1/span 6;
   }
@@ -177,15 +128,12 @@ main {
   .info .content {
     grid-column: 2/span 4;
   }
-
   .info .image {
     grid-column: 7/span 6;
   }
-
   .info-right .content {
     grid-column: 8/span 4;
   }
-
   .info-right .image {
     grid-column: 1/span 6;
   }
@@ -193,8 +141,8 @@ main {
 /* Header */
 header {
   background-attachment: fixed;
-  background-color: skyblue;
-  background-image: url(./myndir/header.jpg);
+  background-color: #87ceeb;
+  background-image: url("./myndir/header.jpg");
   background-position: 50% 50%;
   color: #fff;
   display: flex;
@@ -289,12 +237,10 @@ header .protection {
     display: grid;
     grid-template-columns: repeat(var(--columns), 1fr);
   }
-
   .card {
     grid-column: span 6;
   }
 }
-
 .card > .image {
   height: 300px;
   order: -1;
@@ -330,3 +276,5 @@ footer {
   padding: var(--spacing);
   text-align: center;
 }
+
+/*# sourceMappingURL=Styles.css.map */
