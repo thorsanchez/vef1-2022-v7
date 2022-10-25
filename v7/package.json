@@ -1,0 +1,19 @@
+{
+    "name": "v7",
+    "version": "1.0.0",
+    "description": "dæmi",
+    "main": "index.js",
+    "scripts": {
+      "dev": "browser-sync start --server --files scripts.js index.html",
+      "copy:html": "cpy ./*html ./build/",
+      "copy:js": "cpy ./*.js ./build/",
+      "build": "concurrently npm:copy:*"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "browser-sync": "^2.27.10",
+      "concurrently": "^7.5.0",
+      "cpy-cli": "^4.2.0"
+    }
+  }
